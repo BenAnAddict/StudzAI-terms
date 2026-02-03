@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutzungsbedingungen - StudzAI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #448AFF 0%, #00BCD4 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #448AFF;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .app-name {
+            font-size: 1.2em;
+            color: #5F6368;
+            margin-bottom: 30px;
+        }
+
+        .last-updated {
+            background: #F5F7FA;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            color: #5F6368;
+        }
+
+        h2 {
+            color: #00BCD4;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #E0E0E0;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #448AFF;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-box {
+            background: #E3F2FD;
+            border-left: 4px solid #448AFF;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: #FFF3E0;
+            border-left: 4px solid #FF9800;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box strong {
+            color: #FF9800;
+        }
+
+        .contact-box strong {
+            color: #448AFF;
+        }
+
+        a {
+            color: #448AFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .language-switch {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .language-switch button {
+            background: #448AFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        .language-switch button:hover {
+            background: #00BCD4;
+        }
+
+        .language-switch button.active {
+            background: #00BCD4;
+        }
+
+        .language-content {
+            display: none;
+        }
+
+        .language-content.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📋 Nutzungsbedingungen</h1>
+    <div class="app-name">StudzAI - Intelligente Lern-App</div>
+
+    <div class="language-switch">
+        <button onclick="switchLanguage('de')" id="btn-de" class="active">🇩🇪 Deutsch</button>
+        <button onclick="switchLanguage('en')" id="btn-en">🇬🇧 English</button>
+    </div>
+
+    <div id="content-de" class="language-content active">
+        <div class="last-updated">
+            <strong>Letzte Aktualisierung:</strong> 3. Februar 2026<br>
+            <strong>Version:</strong> 1.0<br>
+            <strong>Gültig ab:</strong> 3. Februar 2026
+        </div>
+
+        <h2>1. Einleitung und Geltungsbereich</h2>
+        <p>
+            Willkommen bei StudzAI! Diese Nutzungsbedingungen ("Bedingungen") regeln Ihre Nutzung der
+            StudzAI-Mobile-App ("App", "Dienst", "wir", "uns"). Durch die Nutzung der App erklären Sie
+            sich mit diesen Bedingungen einverstanden.
+        </p>
+        <p>
+            <strong>Wichtig:</strong> Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie die
+            App verwenden. Wenn Sie nicht einverstanden sind, dürfen Sie die App nicht nutzen.
+        </p>
+
+        <h2>2. Leistungsbeschreibung</h2>
+        <p>
+            StudzAI ist eine KI-gestützte Lern-App, die folgende Funktionen bietet:
+        </p>
+        <ul>
+            <li><strong>Lerninhalte:</strong> Automatische Generierung von Lektionen, Karteikarten und Quiz</li>
+            <li><strong>Vokabeltrainer:</strong> Erstellen und Lernen von Vokabeldecks</li>
+            <li><strong>KI-Assistent:</strong> Beantwortung von Fragen und Erklärung komplexer Themen</li>
+            <li><strong>Bildanalyse:</strong> Extraktion von Lerninhalten aus hochgeladenen Bildern</li>
+            <li><strong>Lernfortschritt:</strong> Tracking von XP, Streaks und Statistiken</li>
+            <li><strong>Cloud-Synchronisation:</strong> Geräteübergreifende Datenspeicherung</li>
+        </ul>
+
+        <h2>3. KI-Disclaimer und Haftungsausschluss</h2>
+        <div class="warning-box">
+            <p><strong>⚠️ WICHTIGER HINWEIS ZUR KI-NUTZUNG:</strong></p>
+            <p>
+                StudzAI verwendet künstliche Intelligenz (Google Gemini API) zur Content-Generierung.
+                <strong>KI-generierte Inhalte können fehlerhaft, unvollständig oder irreführend sein.</strong>
+            </p>
+        </div>
+
+        <h3>3.1 Keine Garantie für Richtigkeit</h3>
+        <ul>
+            <li>KI-Modelle können "halluzinieren" und falsche Informationen als Fakten präsentieren</li>
+            <li>Wir übernehmen keine Haftung für inhaltliche Fehler in generierten Lektionen, Quiz oder Antworten</li>
+            <li>Alle Inhalte dienen ausschließlich zu Lernzwecken und ersetzen keine fachliche Beratung</li>
+            <li>Nutzer sind selbst verantwortlich für die Überprüfung der Richtigkeit von Informationen</li>
+        </ul>
+
+        <h3>3.2 Eingeschränkte Haftung</h3>
+        <p>
+            Wir haften nicht für Schäden, die durch die Nutzung fehlerhafter KI-generierter Inhalte
+            entstehen, einschließlich (aber nicht beschränkt auf):
+        </p>
+        <ul>
+            <li>Falsche Prüfungsvorbereitung aufgrund ungenauer Lerninhalte</li>
+            <li>Schlechte Noten oder verpasste Prüfungen</li>
+            <li>Fehlinformationen in akademischen oder beruflichen Kontexten</li>
+        </ul>
+
+        <h3>3.3 Keine medizinische/rechtliche Beratung</h3>
+        <p>
+            StudzAI bietet <strong>keine medizinische, rechtliche oder finanzielle Beratung</strong>.
+            Generierte Inhalte zu diesen Themen sind rein informativ und dürfen nicht als professioneller
+            Rat verwendet werden.
+        </p>
+
+        <h2>4. Nutzerkonto und Anmeldung</h2>
+        <h3>4.1 Kontopflichten</h3>
+        <ul>
+            <li>Sie müssen ein Google-Konto zur Anmeldung verwenden</li>
+            <li>Sie sind für die Sicherheit Ihres Kontos verantwortlich</li>
+            <li>Sie dürfen Ihr Konto nicht an Dritte weitergeben</li>
+            <li>Sie müssen mindestens 13 Jahre alt sein (unter 16 Jahren: Zustimmung der Eltern erforderlich)</li>
+        </ul>
+
+        <h3>4.2 Konto-Sperrung</h3>
+        <p>
+            Wir behalten uns das Recht vor, Konten ohne Vorankündigung zu sperren, wenn:
+        </p>
+        <ul>
+            <li>Verstöße gegen diese Nutzungsbedingungen vorliegen</li>
+            <li>Missbräuchliche Nutzung der API oder KI-Funktionen festgestellt wird</li>
+            <li>Illegale Aktivitäten festgestellt werden</li>
+        </ul>
+
+        <h2>5. Premium-Abonnement und Zahlungen</h2>
+        <h3>5.1 Abonnement-Modelle</h3>
+        <p>
+            StudzAI bietet ein Premium-Abonnement mit folgenden Vorteilen:
+        </p>
+        <ul>
+            <li><strong>Werbefrei:</strong> Keine Anzeigen in der App</li>
+            <li><strong>Unbegrenzte KI-Anfragen:</strong> Keine Limits für Content-Generierung</li>
+            <li><strong>Erweiterte Features:</strong> Zugriff auf Premium-Funktionen</li>
+        </ul>
+
+        <h3>5.2 Zahlungsabwicklung</h3>
+        <ul>
+            <li>Alle Zahlungen werden über Google Play Billing abgewickelt</li>
+            <li>Es gelten die <a href="https://play.google.com/intl/de_de/about/play-terms/" target="_blank">Google Play-Nutzungsbedingungen</a></li>
+            <li>Abonnements verlängern sich automatisch, sofern nicht gekündigt</li>
+            <li>Preise können sich ändern (bestehende Abonnenten werden 30 Tage vorher informiert)</li>
+        </ul>
+
+        <h3>5.3 Keine Rückerstattung</h3>
+        <p>
+            Grundsätzlich sind alle Käufe endgültig. Ausnahmen gemäß EU-Widerrufsrecht (siehe Abschnitt 6).
+        </p>
+
+        <h2>6. Widerrufsrecht (EU-Verbraucher)</h2>
+        <h3>6.1 14-Tage-Widerrufsfrist</h3>
+        <p>
+            Verbraucher in der EU haben das Recht, innerhalb von 14 Tagen ohne Angabe von Gründen von einem
+            Vertrag zurückzutreten.
+        </p>
+        <div class="contact-box">
+            <p><strong>Widerruf per E-Mail:</strong></p>
+            <p>
+                E-Mail: <a href="mailto:smartcheffai@gmail.com">smartcheffai@gmail.com</a><br>
+                Betreff: "Widerruf Abonnement - [Ihre Google-E-Mail]"
+            </p>
+        </div>
+
+        <h3>6.2 Verlust des Widerrufsrechts</h3>
+        <p>
+            Das Widerrufsrecht erlischt vorzeitig, wenn Sie die App nach Vertragsschluss bereits genutzt haben
+            und Sie ausdrücklich zugestimmt haben, dass die Dienstleistung vor Ablauf der Widerrufsfrist
+            beginnt (automatische Zustimmung bei App-Nutzung nach Kauf).
+        </p>
+
+        <h2>7. Werbung (AdMob)</h2>
+        <h3>7.1 Werbeanzeigen</h3>
+        <ul>
+            <li>Kostenlose Nutzer sehen personalisierte Werbung (Google AdMob)</li>
+            <li>Premium-Nutzer sehen keine Werbung</li>
+            <li>Sie können personalisierte Werbung in den Android-Einstellungen deaktivieren</li>
+        </ul>
+
+        <h3>7.2 Klick-Betrug verboten</h3>
+        <p>
+            Jegliche Manipulation von Werbeanzeigen (Fake-Klicks, automatisierte Klicks) führt zur
+            sofortigen Sperrung Ihres Kontos.
+        </p>
+
+        <h2>8. Verbotene Handlungen</h2>
+        <p>
+            Sie dürfen die App NICHT für folgende Zwecke verwenden:
+        </p>
+        <ul>
+            <li><strong>API-Missbrauch:</strong> Automatisierte Massengenerierung von Inhalten zum Weiterverkauf</li>
+            <li><strong>Hacking:</strong> Reverse Engineering, Dekompilierung oder Modifikation der App</li>
+            <li><strong>Illegale Inhalte:</strong> Erstellung oder Verbreitung illegaler, hasserfüllter oder schädlicher Inhalte</li>
+            <li><strong>Spam:</strong> Massenversand unerwünschter Nachrichten</li>
+            <li><strong>Account-Sharing:</strong> Weitergabe von Premium-Accounts an Dritte</li>
+            <li><strong>Datenkratzung:</strong> Automatisiertes Auslesen von App-Daten</li>
+        </ul>
+
+        <h2>9. Geistiges Eigentum</h2>
+        <h3>9.1 App-Eigentum</h3>
+        <p>
+            Alle Rechte an der App, einschließlich Code, Design und Markenzeichen, verbleiben bei uns.
+        </p>
+
+        <h3>9.2 Nutzergenerierte Inhalte</h3>
+        <ul>
+            <li>Sie behalten alle Rechte an Ihren hochgeladenen Inhalten (Bilder, Vokabeln)</li>
+            <li>Durch die Nutzung gewähren Sie uns eine Lizenz zur technischen Verarbeitung Ihrer Inhalte</li>
+            <li>KI-generierte Inhalte basierend auf Ihren Prompts gehören Ihnen</li>
+        </ul>
+
+        <h3>9.3 Drittanbieter-Inhalte</h3>
+        <p>
+            Die App verwendet:
+        </p>
+        <ul>
+            <li><strong>Google Gemini API:</strong> <a href="https://ai.google.dev/gemini-api/terms" target="_blank">Terms of Service</a></li>
+            <li><strong>Firebase/Google Cloud:</strong> <a href="https://firebase.google.com/terms" target="_blank">Terms of Service</a></li>
+        </ul>
+
+        <h2>10. Datenschutz</h2>
+        <p>
+            Ihre Daten werden gemäß unserer <a href="privacy-policy.html">Datenschutzerklärung</a> verarbeitet.
+            Wichtige Punkte:
+        </p>
+        <ul>
+            <li>Ihre Prompts werden an Google Gemini API übermittelt</li>
+            <li>Lerndaten werden in Google Firestore gespeichert</li>
+            <li>Sie können Ihr Konto jederzeit löschen</li>
+        </ul>
+
+        <h2>11. Haftungsbeschränkung</h2>
+        <p>
+            <strong>Nutzung auf eigenes Risiko:</strong> Die App wird "wie besehen" bereitgestellt.
+            Wir haften nicht für:
+        </p>
+        <ul>
+            <li>Datenverlust (obwohl wir Cloud-Backups anbieten)</li>
+            <li>Dienstausfälle oder Störungen</li>
+            <li>Fehler in KI-generierten Inhalten</li>
+            <li>Indirekte oder Folgeschäden</li>
+        </ul>
+        <p>
+            <strong>Ausnahme:</strong> Haftung bei Vorsatz, grober Fahrlässigkeit oder Verletzung wesentlicher
+            Vertragspflichten bleibt unberührt (deutsches Recht).
+        </p>
+
+        <h2>12. Änderungen der Nutzungsbedingungen</h2>
+        <ul>
+            <li>Wir können diese Bedingungen jederzeit ändern</li>
+            <li>Sie werden 30 Tage vor Inkrafttreten über Änderungen informiert</li>
+            <li>Fortgesetzte Nutzung nach Änderungen gilt als Zustimmung</li>
+        </ul>
+
+        <h2>13. Kündigung und Konto-Löschung</h2>
+        <h3>13.1 Kündigung durch Sie</h3>
+        <ul>
+            <li>Sie können Ihr Abonnement jederzeit in Google Play kündigen</li>
+            <li>Sie können Ihr Konto jederzeit in den App-Einstellungen löschen</li>
+            <li>Nach Löschung werden alle Ihre Daten unwiderruflich gelöscht</li>
+        </ul>
+
+        <h3>13.2 Kündigung durch uns</h3>
+        <p>
+            Wir können Ihr Konto bei Verstößen gegen diese Bedingungen ohne Rückerstattung sperren.
+        </p>
+
+        <h2>14. Anwendbares Recht</h2>
+        <ul>
+            <li><strong>Gerichtsstand:</strong> Deutschland</li>
+            <li><strong>Anwendbares Recht:</strong> Deutsches Recht (unter Ausschluss des UN-Kaufrechts)</li>
+            <li><strong>EU-Verbraucher:</strong> Behalten ihre gesetzlichen Verbraucherrechte</li>
+        </ul>
+
+        <h2>15. Streitbeilegung</h2>
+        <p>
+            Bei Streitigkeiten kontaktieren Sie uns bitte zuerst per E-Mail. Wir bemühen uns, Probleme
+            außergerichtlich zu lösen.
+        </p>
+        <p>
+            <strong>EU-Streitschlichtungsplattform:</strong>
+            <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>
+        </p>
+
+        <h2>16. Salvatorische Klausel</h2>
+        <p>
+            Sollten einzelne Bestimmungen dieser Nutzungsbedingungen unwirksam sein oder werden,
+            bleibt die Gültigkeit der übrigen Bestimmungen hiervon unberührt.
+        </p>
+
+        <h2>17. Kontakt</h2>
+        <div class="contact-box">
+            <p><strong>Fragen zu den Nutzungsbedingungen?</strong></p>
+            <p>
+                E-Mail: <a href="mailto:smartcheffai@gmail.com">smartcheffai@gmail.com</a><br>
+                Impressum: <a href="impressum.html">Impressum</a><br>
+                Datenschutz: <a href="privacy-policy.html">Datenschutzerklärung</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="content-en" class="language-content">
+        <div class="last-updated">
+            <strong>Last Updated:</strong> February 3, 2026<br>
+            <strong>Version:</strong> 1.0<br>
+            <strong>Effective From:</strong> February 3, 2026
+        </div>
+
+        <h2>1. Introduction and Scope</h2>
+        <p>
+            Welcome to StudzAI! These Terms of Service ("Terms") govern your use of the StudzAI mobile
+            application ("App", "Service", "we", "us"). By using the App, you agree to these Terms.
+        </p>
+        <p>
+            <strong>Important:</strong> Please read these Terms carefully before using the App. If you
+            do not agree, you may not use the App.
+        </p>
+
+        <h2>2. Service Description</h2>
+        <p>
+            StudzAI is an AI-powered learning app offering the following features:
+        </p>
+        <ul>
+            <li><strong>Learning Content:</strong> Automatic generation of lessons, flashcards, and quizzes</li>
+            <li><strong>Vocabulary Trainer:</strong> Create and learn vocabulary decks</li>
+            <li><strong>AI Assistant:</strong> Answer questions and explain complex topics</li>
+            <li><strong>Image Analysis:</strong> Extract learning content from uploaded images</li>
+            <li><strong>Learning Progress:</strong> Track XP, streaks, and statistics</li>
+            <li><strong>Cloud Sync:</strong> Cross-device data storage</li>
+        </ul>
+
+        <h2>3. AI Disclaimer and Limitation of Liability</h2>
+        <div class="warning-box">
+            <p><strong>⚠️ IMPORTANT AI USAGE NOTICE:</strong></p>
+            <p>
+                StudzAI uses artificial intelligence (Google Gemini API) for content generation.
+                <strong>AI-generated content may be incorrect, incomplete, or misleading.</strong>
+            </p>
+        </div>
+
+        <h3>3.1 No Guarantee of Accuracy</h3>
+        <ul>
+            <li>AI models can "hallucinate" and present false information as facts</li>
+            <li>We assume no liability for content errors in generated lessons, quizzes, or answers</li>
+            <li>All content is for educational purposes only and does not replace professional advice</li>
+            <li>Users are responsible for verifying the accuracy of information</li>
+        </ul>
+
+        <h3>3.2 Limited Liability</h3>
+        <p>
+            We are not liable for damages arising from the use of erroneous AI-generated content,
+            including (but not limited to):
+        </p>
+        <ul>
+            <li>Incorrect exam preparation due to inaccurate learning content</li>
+            <li>Poor grades or missed exams</li>
+            <li>Misinformation in academic or professional contexts</li>
+        </ul>
+
+        <h3>3.3 No Medical/Legal Advice</h3>
+        <p>
+            StudzAI does <strong>not provide medical, legal, or financial advice</strong>. Generated
+            content on these topics is purely informational and must not be used as professional advice.
+        </p>
+
+        <h2>4. User Account and Registration</h2>
+        <h3>4.1 Account Obligations</h3>
+        <ul>
+            <li>You must use a Google account for registration</li>
+            <li>You are responsible for your account security</li>
+            <li>You may not share your account with third parties</li>
+            <li>You must be at least 13 years old (under 16: parental consent required)</li>
+        </ul>
+
+        <h3>4.2 Account Suspension</h3>
+        <p>
+            We reserve the right to suspend accounts without notice if:
+        </p>
+        <ul>
+            <li>Violations of these Terms occur</li>
+            <li>Abusive use of API or AI functions is detected</li>
+            <li>Illegal activities are identified</li>
+        </ul>
+
+        <h2>5. Premium Subscription and Payments</h2>
+        <h3>5.1 Subscription Models</h3>
+        <p>
+            StudzAI offers a Premium subscription with the following benefits:
+        </p>
+        <ul>
+            <li><strong>Ad-Free:</strong> No advertisements in the app</li>
+            <li><strong>Unlimited AI Requests:</strong> No limits on content generation</li>
+            <li><strong>Advanced Features:</strong> Access to premium functionality</li>
+        </ul>
+
+        <h3>5.2 Payment Processing</h3>
+        <ul>
+            <li>All payments are processed through Google Play Billing</li>
+            <li>The <a href="https://play.google.com/intl/en_us/about/play-terms/" target="_blank">Google Play Terms of Service</a> apply</li>
+            <li>Subscriptions automatically renew unless canceled</li>
+            <li>Prices may change (existing subscribers notified 30 days in advance)</li>
+        </ul>
+
+        <h3>5.3 No Refunds</h3>
+        <p>
+            Generally, all purchases are final. Exceptions according to EU withdrawal rights (see Section 6).
+        </p>
+
+        <h2>6. Right of Withdrawal (EU Consumers)</h2>
+        <h3>6.1 14-Day Withdrawal Period</h3>
+        <p>
+            Consumers in the EU have the right to withdraw from a contract within 14 days without
+            giving reasons.
+        </p>
+        <div class="contact-box">
+            <p><strong>Withdrawal via Email:</strong></p>
+            <p>
+                Email: <a href="mailto:smartcheffai@gmail.com">smartcheffai@gmail.com</a><br>
+                Subject: "Withdrawal Subscription - [Your Google Email]"
+            </p>
+        </div>
+
+        <h3>6.2 Loss of Withdrawal Right</h3>
+        <p>
+            The right of withdrawal expires prematurely if you have already used the app after
+            concluding the contract and you have expressly consented to the service beginning before
+            the withdrawal period expires (automatic consent upon app use after purchase).
+        </p>
+
+        <h2>7. Advertising (AdMob)</h2>
+        <h3>7.1 Advertisements</h3>
+        <ul>
+            <li>Free users see personalized advertising (Google AdMob)</li>
+            <li>Premium users see no advertising</li>
+            <li>You can disable personalized advertising in Android settings</li>
+        </ul>
+
+        <h3>7.2 Click Fraud Prohibited</h3>
+        <p>
+            Any manipulation of advertisements (fake clicks, automated clicks) will result in
+            immediate account suspension.
+        </p>
+
+        <h2>8. Prohibited Conduct</h2>
+        <p>
+            You may NOT use the App for the following purposes:
+        </p>
+        <ul>
+            <li><strong>API Abuse:</strong> Automated mass generation of content for resale</li>
+            <li><strong>Hacking:</strong> Reverse engineering, decompilation, or modification of the app</li>
+            <li><strong>Illegal Content:</strong> Creating or distributing illegal, hateful, or harmful content</li>
+            <li><strong>Spam:</strong> Mass sending of unwanted messages</li>
+            <li><strong>Account Sharing:</strong> Sharing premium accounts with third parties</li>
+            <li><strong>Data Scraping:</strong> Automated extraction of app data</li>
+        </ul>
+
+        <h2>9. Intellectual Property</h2>
+        <h3>9.1 App Ownership</h3>
+        <p>
+            All rights to the App, including code, design, and trademarks, remain with us.
+        </p>
+
+        <h3>9.2 User-Generated Content</h3>
+        <ul>
+            <li>You retain all rights to your uploaded content (images, vocabulary)</li>
+            <li>By using the service, you grant us a license for technical processing of your content</li>
+            <li>AI-generated content based on your prompts belongs to you</li>
+        </ul>
+
+        <h3>9.3 Third-Party Content</h3>
+        <p>
+            The App uses:
+        </p>
+        <ul>
+            <li><strong>Google Gemini API:</strong> <a href="https://ai.google.dev/gemini-api/terms" target="_blank">Terms of Service</a></li>
+            <li><strong>Firebase/Google Cloud:</strong> <a href="https://firebase.google.com/terms" target="_blank">Terms of Service</a></li>
+        </ul>
+
+        <h2>10. Privacy</h2>
+        <p>
+            Your data is processed according to our <a href="privacy-policy.html">Privacy Policy</a>.
+            Key points:
+        </p>
+        <ul>
+            <li>Your prompts are transmitted to Google Gemini API</li>
+            <li>Learning data is stored in Google Firestore</li>
+            <li>You can delete your account at any time</li>
+        </ul>
+
+        <h2>11. Limitation of Liability</h2>
+        <p>
+            <strong>Use at Your Own Risk:</strong> The App is provided "as is." We are not liable for:
+        </p>
+        <ul>
+            <li>Data loss (although we offer cloud backups)</li>
+            <li>Service outages or disruptions</li>
+            <li>Errors in AI-generated content</li>
+            <li>Indirect or consequential damages</li>
+        </ul>
+        <p>
+            <strong>Exception:</strong> Liability for intent, gross negligence, or breach of essential
+            contractual obligations remains unaffected (German law).
+        </p>
+
+        <h2>12. Changes to Terms of Service</h2>
+        <ul>
+            <li>We may change these Terms at any time</li>
+            <li>You will be notified 30 days before changes take effect</li>
+            <li>Continued use after changes constitutes acceptance</li>
+        </ul>
+
+        <h2>13. Termination and Account Deletion</h2>
+        <h3>13.1 Termination by You</h3>
+        <ul>
+            <li>You can cancel your subscription at any time in Google Play</li>
+            <li>You can delete your account at any time in app settings</li>
+            <li>After deletion, all your data will be irreversibly deleted</li>
+        </ul>
+
+        <h3>13.2 Termination by Us</h3>
+        <p>
+            We may suspend your account for violations of these Terms without refund.
+        </p>
+
+        <h2>14. Applicable Law</h2>
+        <ul>
+            <li><strong>Jurisdiction:</strong> Germany</li>
+            <li><strong>Applicable Law:</strong> German law (excluding UN Convention on Contracts for the International Sale of Goods)</li>
+            <li><strong>EU Consumers:</strong> Retain their statutory consumer rights</li>
+        </ul>
+
+        <h2>15. Dispute Resolution</h2>
+        <p>
+            In case of disputes, please contact us first by email. We strive to resolve issues
+            out of court.
+        </p>
+        <p>
+            <strong>EU Dispute Resolution Platform:</strong>
+            <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>
+        </p>
+
+        <h2>16. Severability Clause</h2>
+        <p>
+            If individual provisions of these Terms of Service are or become invalid, the validity
+            of the remaining provisions remains unaffected.
+        </p>
+
+        <h2>17. Contact</h2>
+        <div class="contact-box">
+            <p><strong>Questions about the Terms of Service?</strong></p>
+            <p>
+                Email: <a href="mailto:smartcheffai@gmail.com">smartcheffai@gmail.com</a><br>
+                Legal Notice: <a href="impressum.html">Impressum</a><br>
+                Privacy: <a href="privacy-policy.html">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function switchLanguage(lang) {
+        // Hide all content
+        document.querySelectorAll('.language-content').forEach(el => {
+            el.classList.remove('active');
+        });
+
+        // Show selected content
+        document.getElementById('content-' + lang).classList.add('active');
+
+        // Update buttons
+        document.querySelectorAll('.language-switch button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        document.getElementById('btn-' + lang).classList.add('active');
+
+        // Update page language
+        document.documentElement.lang = lang;
+    }
+</script>
+</body>
+</html>
